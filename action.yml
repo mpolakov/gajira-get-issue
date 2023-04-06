@@ -1,16 +1,16 @@
-name: 'Find Jira Issue'
-description: 'Find Jira issue from string'
+name: "Find Jira Issue"
+description: "Find Jira issue from string"
 branding:
-  icon: 'book-open'
-  color: 'blue'
+  icon: "book-open"
+  color: "blue"
 inputs:
-  input-text:  # id of input
-    description: 'Who to greet'
+  input-text: # id of input
+    description: "String from where the issue should be found"
     required: true
-    default: 'World'
+    default: "World"
 outputs:
   issue: # id of output
-    description: 'Key of the found issue'
+    description: "Key of the found issue"
 runs:
-  using: 'node12'
-  main: 'dist/index.js'
+  using: "node16"
+  main: "dist/index.js"

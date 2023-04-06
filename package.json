@@ -1,6 +1,6 @@
 {
   "name": "gajira-get-issue",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Finds a Jira Issue from string",
   "main": "index.js",
   "scripts": {
@@ -8,17 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/cybervoid/gajira-get-issue.git"
+    "url": "git+https://github.com/mpolakov/gajira-get-issue.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/cybervoid/gajira-get-issue/issues"
+    "url": "https://github.com/mpolakov/gajira-get-issue/issues"
   },
-  "homepage": "https://github.com/cybervoid/gajira-get-issue#readme",
+  "homepage": "https://github.com/mpolakov/gajira-get-issue#readme",
   "dependencies": {
-    "@actions/core": "^1.2.3",
-    "@actions/github": "^2.1.1"
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1"
   }
 }
