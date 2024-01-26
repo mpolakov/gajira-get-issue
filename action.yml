@@ -12,5 +12,5 @@ outputs:
   issue: # id of output
     description: "Key of the found issue"
 runs:
-  using: "node16"
+  using: "node20"
   main: "dist/index.js"

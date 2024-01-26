@@ -1,7 +1,15 @@
 # gajira-get-issue
 Finds a Jira Issue from string
 
-![](https://github.com/cybervoid/gajira-get-issue/workflows/Tests/badge.svg)
+![](https://github.com/mpolakov/gajira-get-issue/workflows/Tests/badge.svg)
+
+## Build
+To rebuild the action run the command below
+```
+ncc build index.js --license licenses.txt
+```
+or simply just run ```npm run build```
+
 ## Usage
 To easily find Jira issue from commits or branch, I recommend [Jira Find issue key](https://github.com/marketplace/actions/jira-find-issue-key), the official Jira's release action. What's different with this action,
 if you still need to find an issue when a PR is opened or even when the PR is merged, this action will receive any string and try to find it there and if it's not found, then it will go to the github object and try to find
@@ -12,7 +20,7 @@ it from messages created by github.
 To find an issue key inside commit messages:
 ```yaml
 - name: Find in commit messages
-  uses: cybervoid/gajira-get-issue@v1.0
+  uses: mpolakov/gajira-get-issue@v1.0.2
   with:
     input-text: ${{ github.ref }}
 ```
